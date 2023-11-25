@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class employee {
+public  class employee {
     protected String nom;
     protected int id;
     protected String adrs;
@@ -11,5 +11,13 @@ public class employee {
         this.nb_h=nb_h;
         this.nom=nom;
     }
+    void afficheE(){
+        System.out.println(nom+" "+ id +" "+ adrs);}
+
+    public  float calculerSalaire(){
+        return 0;
+    };
+
+
 
 }

@@ -5,6 +5,9 @@ public class magasin {
     public int capacite = 50;
     produit[] tab = new produit[capacite];
     public int num = 0;
+    employee[] ensemble_employee = new employee[20];
+    int nombre_employee;
+
 
     public magasin(int id, String adresse, int capacite) {
         this.id = id;
@@ -33,4 +36,20 @@ public class magasin {
         }
 
     }
-}
+
+    public boolean ajouter_employe(employee e) {
+        if (nombre_employee <20 ){
+            ensemble_employee[nombre_employee]=e;
+            nombre_employee++;
+            return true;
+        }
+        return false;
+    }
+
+    public void afficher_employee(){
+
+        for (int i = 0; i < ensemble_employee.length; i++) {
+            if (ensemble_employee[i] !=null){
+                ensemble_employee[i].afficheE();
+            }}
+    }}
